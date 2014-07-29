@@ -2,6 +2,15 @@
   action :remove
 end
 
+package "httpd-tools" do
+  action :remove
+end
+
+package "mod_ssl" do
+  action :remove
+end
+
+
 package "httpd24" do
   action :install
 end
@@ -9,6 +18,11 @@ end
 package "httpd24-tools" do
   action :install
 end
+
+package "mod24_ssl" do
+  action :install
+end
+
 
 service "httpd" do
   action [ :enable, :start ]
