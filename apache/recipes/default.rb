@@ -4,7 +4,10 @@ end
 
 package "httpd24" do
   action :install
-  version "2.4.9"
+end
+
+package "httpd24-tools" do
+  action :install
 end
 
 service "httpd" do
