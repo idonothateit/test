@@ -1,3 +1,3 @@
-﻿file "/home/encadmin/hello2.txt" do
+﻿file "/home/encadmin/hello3.txt" do
   action :create
 end
